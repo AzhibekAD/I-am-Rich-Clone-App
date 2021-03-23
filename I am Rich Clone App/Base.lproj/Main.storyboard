@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,51 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="I_am_Rich_Clone_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="texture" translatesAutoresizingMaskIntoConstraints="NO" id="ErI-LS-1Y6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="innerIcon" translatesAutoresizingMaskIntoConstraints="NO" id="fYK-7Y-wQz">
+                                <rect key="frame" x="11" y="320" width="392" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="392" id="Uaw-6M-yd9"/>
+                                    <constraint firstAttribute="height" constant="256" id="oVQ-kl-IEg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I AM TESLA OWNER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJF-9v-8cI">
+                                <rect key="frame" x="77" y="662" width="267" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.92156862745098034" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fYK-7Y-wQz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2Pz-Fh-4bF"/>
+                            <constraint firstItem="ErI-LS-1Y6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fxq-hR-nXB"/>
+                            <constraint firstItem="fYK-7Y-wQz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JpO-X7-hSz"/>
+                            <constraint firstAttribute="bottom" secondItem="ErI-LS-1Y6" secondAttribute="bottom" id="Rst-1w-wMO"/>
+                            <constraint firstItem="fYK-7Y-wQz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Svg-iE-tD6"/>
+                            <constraint firstItem="ErI-LS-1Y6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cEl-vP-JVz"/>
+                            <constraint firstItem="fYK-7Y-wQz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fI9-4e-kx2"/>
+                            <constraint firstItem="ErI-LS-1Y6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oWJ-h7-gdv"/>
+                            <constraint firstItem="fYK-7Y-wQz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uFn-d0-iQE"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="77.678571428571431"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="innerIcon" width="1066.5" height="800"/>
+        <image name="texture" width="1008" height="1344"/>
+    </resources>
 </document>
